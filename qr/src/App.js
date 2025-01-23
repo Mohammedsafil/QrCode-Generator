@@ -40,7 +40,7 @@ const App = () => {
       <label className='input-label'>
         Imagesize(e.g:150)
       </label>
-      <input type='text' id='size-input' placeholder='Enter image size' onChange={(e) => handleSize(e.target.value)}></input>
+      <input type='text' id='size-input' placeholder='Enter image size' onChange={(e) => handleSize(e.target.value)} min={1}></input>
 
       <button className='gen-btn' onClick={qrGen}>Generate</button>
 
